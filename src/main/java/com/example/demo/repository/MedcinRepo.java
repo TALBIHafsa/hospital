@@ -9,4 +9,5 @@ import java.util.List;
 public interface MedcinRepo extends JpaRepository<Medcin, Long> {
     List<Medcin> findMedcinsByNom(String name);
 
+
 }
