@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,5 +22,6 @@ public class Patient {
     @Column(unique = true)
     private String email;
     @OneToMany(mappedBy = "patient")
+
     private Collection<RendezVous> rendezVous;
 }

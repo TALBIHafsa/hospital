@@ -18,7 +18,7 @@ public class ConsultationServiceImpl implements ConsultationService {
     }
 
     @Override
-@Transactional
+    @Transactional
     public Consultation createConsultation(Consultation c) throws ConsultationException {
     try{
         return consultationRepo.save(c);
